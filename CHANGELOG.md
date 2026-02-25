@@ -4,6 +4,10 @@
 <!-- By "very relevant" I mean big features or something manual packagers should know, like leftover files -->
 <!-- Once a release would be opened, group the last bunch of dangling changes, add release version as header and its date -->
 
+# 2.0.2
+
+- fix off-by-one error with launch state save
+
 # 2.0.1
 
 - source and header files can be nested in `src/` and `include/`
