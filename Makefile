@@ -46,6 +46,7 @@ install: lidm
 	[ -f ${DESTDIR}/etc/lidm.ini ] || install -Dm644 ./themes/default.ini ${DESTDIR}/etc/lidm.ini
 	install -Dm644 ./assets/man/lidm.1 ${DESTDIR}${PREFIX}/share/man/man1/
 	install -Dm644 ./assets/man/lidm-config.5 ${DESTDIR}${PREFIX}/share/man/man5/
+	install -Dm644 /assets/systemd.service ${DESTDIR}/usr/lib/systemd/system/lidm.service
 
 uninstall: uninstall-service
 	rm -rf ${DESTDIR}${PREFIX}/bin/lidm ${DESTDIR}/etc/lidm.ini
